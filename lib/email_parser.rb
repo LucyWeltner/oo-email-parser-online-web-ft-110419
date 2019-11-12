@@ -9,9 +9,9 @@ class EmailAddressParser
   def parse
     email_array = @emails.split(",")
     if email_array == [@emails]
+      p [@emails]
       email_array = email_array.split(" ")
       p "no commas"
-      p [@emails]
     end 
     email_array  
   end 
