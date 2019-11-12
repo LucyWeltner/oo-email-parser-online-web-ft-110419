@@ -7,7 +7,7 @@ class EmailAddressParser
     @emails = email_addresses 
   end
   def parse
-    email_array = @emails.split(",")
+    email_array = @emails.split(", ")
     if email_array == [@emails]
       p [@emails]
       email_array = email_array.split(" ")
