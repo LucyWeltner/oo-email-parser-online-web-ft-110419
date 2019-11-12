@@ -11,6 +11,7 @@ class EmailAddressParser
     if email_array == [@emails]
       email_array = email_array.split(" ")
       p "no commas"
+      p [@emails]
     end 
     email_array  
   end 
