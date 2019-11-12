@@ -10,9 +10,12 @@ class EmailAddressParser
     email_array = @emails.split(",")
     if email_array == [@emails]
       email_array = email_array.split(" ")
+      p "no commas"
     end 
     email_array  
   end 
 end 
 
 my_parser = EmailAddressParser.new("john@doe.com, person@somewhere.org")
+
+p my_parser.parse
