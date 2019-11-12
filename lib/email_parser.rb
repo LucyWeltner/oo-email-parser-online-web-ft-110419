@@ -17,6 +17,6 @@ class EmailAddressParser
   end 
 end 
 
-my_parser = EmailAddressParser.new("john@doe.com, person@somewhere.org")
+my_parser = EmailAddressParser.new("john@doe.com  person@somewhere.org")
 
 p my_parser.parse
